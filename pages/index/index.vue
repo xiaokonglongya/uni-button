@@ -4,7 +4,7 @@
 		<view class="text-area">
 			<text class="title">{{ title }}</text>
 		</view>
-		<view class=""><CcButton @tap="showloading" :loading="isloading">36666</CcButton></view>
+		<view class=""><CcButton @tap="showloading" width="400" :loading="isloading">登陆</CcButton></view>
 	</view>
 </template>
 

@@ -114,6 +114,12 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -122,7 +128,23 @@ var _default =
   props: {
     loading: {
       type: Boolean,
-      default: false } } };exports.default = _default;
+      default: false },
+
+    color: {
+      type: String,
+      default: '#ffffff' },
+
+    bgcolor: {
+      type: String,
+      default: '#333333' },
+
+    width: {
+      type: String,
+      default: '100rpx' },
+
+    height: {
+      type: String,
+      default: '80rpx' } } };exports.default = _default;
 
 /***/ }),
 

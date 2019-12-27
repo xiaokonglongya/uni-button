@@ -1,6 +1,12 @@
 <template>
 	<view class="button-container">
-		<button hover-class="none"  :disabled="loading" :class="'button ' + (loading ? 'loading' : '')">
+		<button hover-class="none"  :disabled="loading" :style="{
+		color:color,
+		backgroundColor:bgcolor,
+		width:(loading?height:width),
+		height:height	
+		}"
+		:class="['button',(loading ? 'loading' : '')]">
 			<view class="content"><slot></slot></view>
 			<view class="loader-03"></view>
 		</button>
@@ -16,6 +22,22 @@ export default {
 		loading: {
 			type: Boolean,
 			default: false
+		},
+		color:{
+			type:String,
+			default:'#ffffff'
+		},
+		bgcolor:{
+			type:String,
+			default:'#333333'
+		},
+		width:{
+			type:String,
+			default:'100rpx'
+		},
+		height:{
+			type:String,
+			default:'80rpx'
 		}
 	}
 };
@@ -26,22 +48,14 @@ export default {
 	margin: 0 30rpx;
 	display: flex;
 	.button {
-		background: #666 !important;
-		color: #fff !important;
 		font-weight: 100;
 		padding: 0px;
-		height: 90rpx !important;
-		width: 100% !important;
-		min-width: 100rpx;
 		border-radius: 50rpx;
 		font-size: 30rpx;
 		transition: 0.25s ease all;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-	.button.loading {
-		width: 90rpx !important;
 	}
 	.button.loading .content {
 		display: none;
