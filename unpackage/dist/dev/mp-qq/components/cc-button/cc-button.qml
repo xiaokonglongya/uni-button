@@ -1,0 +1,1 @@
+<view class="button-container data-v-57c688c9"><button class="{{['data-v-57c688c9','button '+(loading?'loading':'')]}}" hover-class="none" disabled="{{loading}}"><view class="content data-v-57c688c9"><slot></slot></view><view class="loader-03 data-v-57c688c9"></view></button></view>

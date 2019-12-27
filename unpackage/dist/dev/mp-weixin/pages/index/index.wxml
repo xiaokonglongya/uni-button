@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><view><cc-button vue-id="1" loading="{{isloading}}" data-event-opts="{{[['^tap',[['showloading']]]]}}" bind:tap="__e" bind:__l="__l" vue-slots="{{['default']}}">3666</cc-button></view></view>

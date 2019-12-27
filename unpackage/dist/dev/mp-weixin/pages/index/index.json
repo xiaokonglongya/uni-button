@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "cc-button": "/components/cc-button/cc-button"
+  }
+}
