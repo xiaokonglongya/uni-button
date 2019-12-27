@@ -142,6 +142,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
+
+
+
 var _ccButton = _interopRequireDefault(__webpack_require__(/*! @/components/cc-button/cc-button.vue */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -152,10 +155,10 @@ var _ccButton = _interopRequireDefault(__webpack_require__(/*! @/components/cc-b
 //
 //
 //
-var _default = { data: function data() {return { title: 'Hello', isloading: false };}, components: { CcButton: _ccButton.default },
-  onLoad: function onLoad() {},
-  methods: {
-    showloading: function showloading() {var _this = this;
+//
+//
+//
+var _default = { data: function data() {return { title: 'Hello', isloading: false };}, components: { CcButton: _ccButton.default }, onLoad: function onLoad() {}, methods: { showloading: function showloading() {var _this = this;
       this.isloading = true;
       setTimeout(function () {
         _this.isloading = false;
@@ -279,6 +282,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
 var _default =
 {
   data: function data() {
@@ -299,11 +304,15 @@ var _default =
 
     width: {
       type: String,
-      default: '100rpx' },
+      default: '200rpx' },
 
     height: {
       type: String,
-      default: '80rpx' } } };exports.default = _default;
+      default: '80rpx' },
+
+    borderWidth: {
+      type: String,
+      default: '3rpx' } } };exports.default = _default;
 
 /***/ }),
 /* 26 */

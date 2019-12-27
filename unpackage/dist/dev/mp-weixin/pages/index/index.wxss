@@ -62,7 +62,8 @@
     color: inherit;
     vertical-align: middle;
     pointer-events: none;
-    border: 3rpx solid currentcolor;
+    border-style: solid;
+    border-color: currentcolor;
     border-bottom-color: transparent;
     border-radius: 50%;
     -webkit-animation: 2s loader-03-data-v-57c688c9 linear infinite;

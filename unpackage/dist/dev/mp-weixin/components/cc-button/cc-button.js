@@ -120,6 +120,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
 var _default =
 {
   data: function data() {
@@ -140,11 +142,15 @@ var _default =
 
     width: {
       type: String,
-      default: '100rpx' },
+      default: '200rpx' },
 
     height: {
       type: String,
-      default: '80rpx' } } };exports.default = _default;
+      default: '80rpx' },
+
+    borderWidth: {
+      type: String,
+      default: '3rpx' } } };exports.default = _default;
 
 /***/ }),
 

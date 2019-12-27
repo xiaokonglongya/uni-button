@@ -8,7 +8,9 @@
 		}"
 		:class="['button',(loading ? 'loading' : '')]">
 			<view class="content"><slot></slot></view>
-			<view class="loader-03"></view>
+			<view class="loader-03" :style="{
+				borderWidth:borderWidth
+			}"></view>
 		</button>
 	</view>
 </template>
@@ -33,11 +35,15 @@ export default {
 		},
 		width:{
 			type:String,
-			default:'100rpx'
+			default:'200rpx'
 		},
 		height:{
 			type:String,
 			default:'80rpx'
+		},
+		borderWidth:{
+			type:String,
+			default:'3rpx'
 		}
 	}
 };
@@ -74,7 +80,8 @@ export default {
 		color: inherit;
 		vertical-align: middle;
 		pointer-events: none;
-		border: 3rpx solid currentcolor;
+		border-style:solid;
+		border-color: currentcolor;
 		border-bottom-color: transparent;
 		border-radius: 50%;
 		animation: 2s loader-03 linear infinite;
