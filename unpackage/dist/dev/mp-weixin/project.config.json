@@ -7,8 +7,8 @@
 		"urlCheck": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.2",
-	"appid": "touristappid",
+	"libVersion": "2.7.0",
+	"appid": "wxa7216074c31dab1c",
 	"projectname": "button",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
