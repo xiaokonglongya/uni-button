@@ -1,4 +1,5 @@
 ## 如何使用
+
 #### 引入组件
 	import CcButton from '@/components/cc-button/cc-button.vue'	
 
@@ -15,7 +16,14 @@
 	}
 模板使用
 
-	<CcButton @tap="showloading('isloading')" :loading="isloading">登陆</CcButton>
+	<CcButton @cctap="showloading('isloading')" :loading="isloading">登陆</CcButton>
+## 事件方法
+| 名称 |  描述 | 是否必须 |  
+| :---: | :---: |:---: |
+| cctap | tap事件 | 否 | 
+| cclick |   click事件 | 否 | 
+
+	<CcButton @cctap="showloading('isloading')" @cclick="showloading('isloading')" :loading="isloading">登陆</CcButton>
 
 ## 可用参数
 | 参数名字 | 参数类型 | 描述 | 是否必须 | 默认值 | 
@@ -34,38 +42,38 @@
 		<view class="content">
 			<view class="title margin-top">普通样式</view>
 			<view class="margin-top box">
-				<CcButton @tap="showloading('isloading')" :loading="isloading">登陆</CcButton>
+				<CcButton @cctap="showloading('isloading')" :loading="isloading">登陆</CcButton>
 			</view>
 			<view class="margin-top">
-				<CcButton @tap="showloading('isloading2')" fontsize="36rpx" height="120rpx" width="350rpx" color="#fff" bgcolor="rgba(252, 28, 143, 1)"
+				<CcButton @cctap="showloading('isloading2')" fontsize="36rpx" height="120rpx" width="350rpx" color="#fff" bgcolor="rgba(252, 28, 143, 1)"
 				 :loading="isloading2">支持自定义大小</CcButton>
 			</view>
 			<view class="margin-top">
-				<CcButton @tap="showloading('isloading3')" width="600rpx" color="#fff" bgcolor=" linear-gradient(-45deg, rgba(87, 225, 181, 1) 0%, rgba(0, 63, 255, 1) 100%);"
+				<CcButton @cctap="showloading('isloading3')" width="600rpx" color="#fff" bgcolor=" linear-gradient(-45deg, rgba(87, 225, 181, 1) 0%, rgba(0, 63, 255, 1) 100%);"
 				 :loading="isloading3">渐变色按钮</CcButton>
 			</view>
 			<view class="title">加载中...</view>
 			<view class="margin-top box">
-				<CcButton @tap="showloading('isloading')" :loading="true">加载中...</CcButton>
+				<CcButton @cctap="showloading('isloading')" :loading="true">加载中...</CcButton>
 			</view>
 			<view class="margin-top margin-top">
-				<CcButton @tap="showloading('isloading2')" fontsize="36rpx" height="120rpx" width="350rpx" color="#fff" bgcolor="rgba(252, 28, 143, 1)"
+				<CcButton @cctap="showloading('isloading2')" fontsize="36rpx" height="120rpx" width="350rpx" color="#fff" bgcolor="rgba(252, 28, 143, 1)"
 				 :loading="true">支持自定义大小</CcButton>
 			</view>
 			<view class="margin-top">
-				<CcButton @tap="showloading('isloading3')" width="600rpx" color="#fff" bgcolor=" linear-gradient(-45deg, rgba(87, 225, 181, 1) 0%, rgba(0, 63, 255, 1) 100%);"
+				<CcButton @cctap="showloading('isloading3')" width="600rpx" color="#fff" bgcolor=" linear-gradient(-45deg, rgba(87, 225, 181, 1) 0%, rgba(0, 63, 255, 1) 100%);"
 				 :loading="true">渐变色按钮</CcButton>
 			</view>
 			<view class="title">禁用</view>
 			<view class="margin-top box">
-				<CcButton @tap="showloading('isloading')" :isdisable="true" >禁用</CcButton>
+				<CcButton @cctap="showloading('isloading')" :isdisable="true" >禁用</CcButton>
 			</view>
 			<view class="margin-top margin-top">
-				<CcButton @tap="showloading('isloading2')" :isdisable="true" :loading="true" fontsize="36rpx" height="120rpx" width="350rpx" color="#fff" bgcolor="rgba(252, 28, 143, 1)"
+				<CcButton @cctap="showloading('isloading2')" :isdisable="true" :loading="true" fontsize="36rpx" height="120rpx" width="350rpx" color="#fff" bgcolor="rgba(252, 28, 143, 1)"
 				 >禁用</CcButton>
 			</view>
 			<view class="margin-top">
-				<CcButton @tap="showloading('isloading3')" :isdisable="true" width="600rpx" color="#fff" bgcolor=" linear-gradient(-45deg, rgba(87, 225, 181, 1) 0%, rgba(0, 63, 255, 1) 100%);"
+				<CcButton @cctap="showloading('isloading3')" :isdisable="true" width="600rpx" color="#fff" bgcolor=" linear-gradient(-45deg, rgba(87, 225, 181, 1) 0%, rgba(0, 63, 255, 1) 100%);"
 				 >禁用</CcButton>
 			</view>
 		</view>
